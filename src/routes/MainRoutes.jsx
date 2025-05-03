@@ -7,13 +7,14 @@ import NotFound from "../screens/NotFound";
 import ProductDetails from "../screens/ProductDetails";
 import AddProduct from "../screens/addProduct";
 import EditProduct from "../screens/EditProduct";
+import ProductsLayout from "../components/ProductsLayout";
 
 const MainRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/products">
+      <Route path="/products" element={<ProductsLayout />}>
         <Route index element={<Products />} />
         <Route path=":id" element={<ProductDetails />} />
         <Route path="add" element={<AddProduct />} />
