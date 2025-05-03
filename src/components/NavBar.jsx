@@ -15,7 +15,9 @@ const NavBar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about" state={{ abc: "Hello", test: "World" }}>
+            About
+          </Link>
         </li>
         <li>
           <Link to="/products">Products</Link>
