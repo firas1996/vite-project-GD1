@@ -21,7 +21,7 @@ const ProductsLayout = () => {
           <Link to="/products/3">Product 3</Link>
         </li>
       </ul>
-      <Outlet />
+      <Outlet context={{ aaa: "zzz", eee: "rrr" }} />
     </>
   );
 };
